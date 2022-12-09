@@ -1,0 +1,101 @@
++--------+-----------+--------------------------------------------------+------------------+------------------------------------------------------------------------+------------------+
+| Domain | Method    | URI                                              | Name             | Action                                                                 | Middleware       |
++--------+-----------+--------------------------------------------------+------------------+------------------------------------------------------------------------+------------------+
+|        | GET|HEAD  | /                                                |                  | App\Http\Controllers\HomepageController@index                          | web,auth         |
+|        | GET|HEAD  | api/books                                        |                  | App\Http\Controllers\ApiController@index                               | web              |
+|        | GET|HEAD  | api/desktop/{token}                              |                  | App\Http\Controllers\DesktopClientController@index                     | web              |
+|        | GET|HEAD  | api/mobile/{token}                               |                  | App\Http\Controllers\MobileClientController@index                      | web              |
+|        | GET|HEAD  | api/user                                         |                  | Closure                                                                | api,auth:api     |
+|        | POST      | community/action/cast_vote                       |                  | App\Http\Controllers\CommunityController@castVote                      | web,auth         |
+|        | POST      | community/action/change_root_community           |                  | App\Http\Controllers\CommunityController@changeRootCommunity           | web,auth         |
+|        | POST      | community/action/delete_course                   |                  | App\Http\Controllers\CommunityController@deleteCourse                  | web,auth         |
+|        | GET|HEAD  | community/action/delete_post/{postType}/{postId} |                  | App\Http\Controllers\CommunityController@deletePost                    | web,auth         |
+|        | POST      | community/action/fetch_join_token                |                  | App\Http\Controllers\CommunityController@fetchJoinToken                | web,auth         |
+|        | POST      | community/action/save_assignment                 |                  | App\Http\Controllers\CommunityController@saveAssignments               | web,auth         |
+|        | POST      | community/action/save_courses                    |                  | App\Http\Controllers\CommunityController@saveCourses                   | web,auth         |
+|        | POST      | community/action/save_exam                       |                  | App\Http\Controllers\CommunityController@saveExams                     | web,auth         |
+|        | POST      | community/action/save_general_posts              |                  | App\Http\Controllers\CommunityController@saveGeneralPosts              | web,auth         |
+|        | POST      | community/action/save_notice                     |                  | App\Http\Controllers\CommunityController@saveNotices                   | web,auth         |
+|        | POST      | community/action/save_poll                       |                  | App\Http\Controllers\CommunityController@savePolls                     | web,auth         |
+|        | POST      | community/action/save_teachers                   |                  | App\Http\Controllers\CommunityController@saveTeachers                  | web,auth         |
+|        | POST      | community/action/update_cls_routine              |                  | App\Http\Controllers\CommunityController@updateClassRoutine            | web,auth         |
+|        | POST      | community/action/update_post                     |                  | App\Http\Controllers\CommunityController@updatePost                    | web,auth         |
+|        | GET|HEAD  | community/all                                    |                  | App\Http\Controllers\CommunityController@showAllCommunities            | web,auth         |
+|        | GET|HEAD  | community/courses                                |                  | App\Http\Controllers\CommunityController@showAddCourses                | web,auth         |
+|        | POST      | community/create                                 |                  | App\Http\Controllers\CommunityController@doCreateCommunity             | web,auth         |
+|        | GET|HEAD  | community/create                                 |                  | App\Http\Controllers\CommunityController@showCreateCommunity           | web,auth         |
+|        | PATCH     | community/edit/{communityId}                     |                  | App\Http\Controllers\CommunityController@doEditCommunity               | web,auth         |
+|        | GET|HEAD  | community/edit/{communityId}                     |                  | App\Http\Controllers\CommunityController@showEditCommunity             | web,auth         |
+|        | GET|HEAD  | community/join/{token}/{invited_by?}             |                  | App\Http\Controllers\CommunityController@joinRequestToCommunity        | web,auth         |
+|        | GET|HEAD  | community/search                                 |                  | Closure                                                                | web              |
+|        | POST      | community/search                                 |                  | App\Http\Controllers\CommunityController@searchCommunity               | web,auth         |
+|        | GET|HEAD  | community/teachers                               |                  | App\Http\Controllers\CommunityController@showAddTeachers               | web,auth         |
+|        | GET|HEAD  | community/view/all_members                       |                  | App\Http\Controllers\CommunityController@showAllMembers                | web,auth         |
+|        | GET|HEAD  | community/view/{community}                       |                  | App\Http\Controllers\CommunityController@showSingleCommunity           | web,auth         |
+|        | GET|HEAD  | contest                                          | contest.index    | App\Http\Controllers\ContestController@index                           | web,auth         |
+|        | POST      | contest                                          | contest.store    | App\Http\Controllers\ContestController@store                           | web,auth         |
+|        | GET|HEAD  | contest/create                                   | contest.create   | App\Http\Controllers\ContestController@create                          | web,auth         |
+|        | PUT|PATCH | contest/{contest}                                | contest.update   | App\Http\Controllers\ContestController@update                          | web,auth         |
+|        | GET|HEAD  | contest/{contest}                                | contest.show     | App\Http\Controllers\ContestController@show                            | web,auth         |
+|        | DELETE    | contest/{contest}                                | contest.destroy  | App\Http\Controllers\ContestController@destroy                         | web,auth         |
+|        | GET|HEAD  | contest/{contest}/edit                           | contest.edit     | App\Http\Controllers\ContestController@edit                            | web,auth         |
+|        | GET|HEAD  | home                                             |                  | App\Http\Controllers\HomeController@index                              | web              |
+|        | GET|HEAD  | login                                            | login            | App\Http\Controllers\Auth\LoginController@showLoginForm                | web,guest        |
+|        | POST      | login                                            |                  | App\Http\Controllers\Auth\LoginController@login                        | web,guest        |
+|        | POST      | logout                                           | logout           | App\Http\Controllers\Auth\LoginController@logout                       | web              |
+|        | GET|HEAD  | logout                                           |                  | Closure                                                                | web              |
+|        | GET|HEAD  | notice_board                                     |                  | App\Http\Controllers\Noticeboard\BoardController@index                 | web,auth,Closure |
+|        | POST      | notification/mark_as_seen                        |                  | App\Http\Controllers\NotificationController@markAsSeen                 | web,auth         |
+|        | POST      | password/email                                   | password.email   | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web,guest        |
+|        | GET|HEAD  | password/reset                                   | password.request | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web,guest        |
+|        | POST      | password/reset                                   |                  | App\Http\Controllers\Auth\ResetPasswordController@reset                | web,guest        |
+|        | GET|HEAD  | password/reset/{token}                           | password.reset   | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web,guest        |
+|        | GET|HEAD  | privacy-policy                                   |                  | App\Http\Controllers\HomepageController@showPrivacyPolicy              | web              |
+|        | GET|HEAD  | register                                         | register         | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      | web,guest        |
+|        | POST      | register                                         |                  | App\Http\Controllers\Auth\RegisterController@register                  | web,guest        |
+|        | GET|HEAD  | sse                                              |                  | App\Http\Controllers\HomeController@sse                                | web              |
+|        | GET|HEAD  | teachers/id/{id}                                 |                  | App\Http\Controllers\TeachersController@index                          | web,auth         |
+|        | GET|HEAD  | test                                             |                  | App\Http\Controllers\HomeController@test                               | web              |
+|        | GET|HEAD  | tutorial/video                                   |                  | App\Http\Controllers\TutorialController@showVideoTutPage               | web,auth         |
+|        | GET|HEAD  | upload/request                                   |                  | App\Http\Controllers\UploadController@showUploadRequest                | web,auth         |
+|        | POST      | upload/request                                   |                  | App\Http\Controllers\UploadController@doUploadRequest                  | web,auth         |
+|        | GET|HEAD  | upload/request/all                               |                  | App\Http\Controllers\UploadController@showAllUploadRequest             | web,auth         |
+|        | POST      | upload/request/delete/{requestId}                |                  | App\Http\Controllers\UploadController@deleteUploadRequest              | web,auth         |
+|        | POST      | upload/request/respond/{requestId}               |                  | App\Http\Controllers\UploadController@doUploadRequestResponse          | web,auth         |
+|        | GET|HEAD  | upload/request/respond/{requestId}               |                  | App\Http\Controllers\UploadController@showUploadRequestResponse        | web,auth         |
+|        | POST      | upload/save_youtube_link                         |                  | App\Http\Controllers\UploadController@saveYoutubeLink                  | web,auth         |
+|        | POST      | users/answer/delete                              |                  | App\Http\Controllers\QuestionController@deleteAnswer                   | web,auth         |
+|        | POST      | users/answer/save                                |                  | App\Http\Controllers\QuestionController@saveAnswer                     | web,auth         |
+|        | POST      | users/answer/update                              |                  | App\Http\Controllers\QuestionController@updateAnswer                   | web,auth         |
+|        | POST      | users/ask                                        |                  | App\Http\Controllers\QuestionController@saveQuestion                   | web,auth         |
+|        | GET|HEAD  | users/ask                                        |                  | App\Http\Controllers\QuestionController@index                          | web,auth         |
+|        | GET|HEAD  | users/assignment/details/{assignmentId}          |                  | App\Http\Controllers\CommunityController@showAssignmentDetails         | web,auth         |
+|        | POST      | users/cloud                                      |                  | App\Http\Controllers\CloudController@cloudAction                       | web,auth         |
+|        | POST      | users/cloud/bin/restore                          |                  | App\Http\Controllers\CloudController@restoreFromRecycleBin             | web,auth         |
+|        | GET|HEAD  | users/cloud/bin/{communityId}                    |                  | App\Http\Controllers\CloudController@showRecycleBin                    | web,auth         |
+|        | POST      | users/cloud/cut_copy_dir_file                    |                  | App\Http\Controllers\CloudController@cutCopyDirFile                    | web,auth         |
+|        | POST      | users/cloud/delete_dir_file                      |                  | App\Http\Controllers\CloudController@deleteDirFile                     | web,auth         |
+|        | GET|HEAD  | users/cloud/download/{cloudId}                   |                  | App\Http\Controllers\CloudController@downloadFile                      | web              |
+|        | POST      | users/cloud/execute_contributor_action           |                  | App\Http\Controllers\CloudController@executeContributorAction          | web,auth         |
+|        | GET|HEAD  | users/cloud/preview/{cloudId}                    |                  | App\Http\Controllers\CloudController@previewFile                       | web              |
+|        | POST      | users/cloud/rename_dir                           |                  | App\Http\Controllers\CloudController@renameDir                         | web,auth         |
+|        | POST      | users/cloud/save_current_cloud                   |                  | App\Http\Controllers\CloudController@saveCurrentCloud                  | web,auth         |
+|        | GET|HEAD  | users/cloud/view/{cloudId}                       |                  | App\Http\Controllers\CloudController@showSingleDirFile                 | web,auth         |
+|        | POST      | users/cloud/{cloudId}                            |                  | App\Http\Controllers\CloudController@cloudUpload                       | web,auth         |
+|        | GET|HEAD  | users/cloud/{communityId}                        |                  | App\Http\Controllers\CloudController@index                             | web,auth         |
+|        | GET|HEAD  | users/community/settings                         |                  | App\Http\Controllers\SettingsController@showSettings                   | web,auth         |
+|        | POST      | users/community/settings                         |                  | App\Http\Controllers\SettingsController@saveAcademicSession            | web,auth         |
+|        | POST      | users/community/settings/update_selected_dir     |                  | App\Http\Controllers\SettingsController@updateSyncableDirId            | web,auth         |
+|        | GET|HEAD  | users/exam/details/{examId}                      |                  | App\Http\Controllers\CommunityController@showExamDetails               | web,auth         |
+|        | GET|HEAD  | users/profile/fetch_what_iam                     |                  | App\Http\Controllers\ProfileController@getPortFolioWhatIam             | web,auth         |
+|        | GET|HEAD  | users/profile/id/{id}                            |                  | App\Http\Controllers\ProfileController@showSingleProfile               | web,auth         |
+|        | POST      | users/profile/update                             |                  | App\Http\Controllers\ProfileController@doUpdateProfile                 | web,auth         |
+|        | GET|HEAD  | users/profile/update                             |                  | App\Http\Controllers\ProfileController@showUpdateProfile               | web,auth         |
+|        | GET|HEAD  | users/question/all                               |                  | App\Http\Controllers\QuestionController@showAllQuestions               | web,auth         |
+|        | POST      | users/question/comment_for_q                     |                  | App\Http\Controllers\QuestionController@doCommentForQuestion           | web,auth         |
+|        | POST      | users/question/edit_comment                      |                  | App\Http\Controllers\QuestionController@editComment                    | web,auth         |
+|        | POST      | users/question/vote                              |                  | App\Http\Controllers\QuestionController@castVote                       | web,auth         |
+|        | GET|HEAD  | users/question/{id}                              |                  | App\Http\Controllers\QuestionController@showSingleQuestion             | web,auth         |
+|        | GET|HEAD  | visitor                                          |                  | App\Http\Controllers\VisitorController@index                           | web,auth         |
+|        | GET|HEAD  | website/{website_name}                           |                  | App\Http\Controllers\userWebsiteController@index                       | web              |
++--------+-----------+--------------------------------------------------+------------------+------------------------------------------------------------------------+------------------+

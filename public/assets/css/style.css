@@ -1,0 +1,1143 @@
+body{
+	font-family: 'Gentium Basic', serif;
+	background-color: #f8f8f8 !important;
+}
+
+
+/* introduction */
+
+#introduction #page1{
+	width: 100%;
+	padding: 0px;
+	margin: 0px auto;
+}
+.page1-bg-img:after{
+	content:'';
+	//background: url('https://upload.wikimedia.org/wikipedia/commons/b/b5/Curzon_Hall_Panorama.jpg') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	z-index:-1;
+	opacity: 0.3; /* Here is your opacity */
+}
+#introduction #site-logo{
+	margin-top: 80px;
+	width: 250px;
+	height: 200px;
+}
+#introduction #motto{
+	font-size: 50px;
+	color: #000;
+	font-family: 'Slabo 27px', serif;
+}
+#introduction .small-msg{
+	color: #070eba;
+}
+#get-started{
+	margin-top: 30px;
+}
+#get-started span a{
+	font-size: 30px;
+	background-color: #00a962;
+	padding: 20px 40px;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 1px 1px 1px #f7ee9a;
+}
+.down-scroll img{
+	width: 50px;
+	height: auto;
+	margin-top: 50px;
+	cursor: pointer;
+}
+#page2 .left, #page2 .right{
+	margin-top: 50px;
+}
+#right #qa-icon img{
+	width: 400px;
+	height: auto;
+}
+.study-resource-icon img{
+	width: 150px;
+	height: 150px;
+	margin-top: 30px;
+}
+
+
+/* introduction */
+
+
+
+/*============notification================ */
+#noti_Container {
+	position:relative;
+}
+
+/* A CIRCLE LIKE BUTTON IN THE TOP MENU. */
+#noti_Button {
+	margin:-3px 10px 0 10px;
+	cursor:pointer;
+}
+
+/* THE POPULAR RED NOTIFICATIONS COUNTER. */
+#noti_Counter {
+	display:block;
+	position:absolute;
+	background:#E1141E;
+	cursor: pointer;
+	color:#FFF;
+	font-size:12px;
+	font-weight:normal;
+	padding:1px 3px;
+	margin:-8px 0 0 25px;
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	z-index:10;
+}
+
+/* THE NOTIFICAIONS WINDOW. THIS REMAINS HIDDEN WHEN THE PAGE LOADS. */
+#notifications {
+	display:none;
+	width:380px;
+	position:absolute;
+	top:30px;
+	left:0;
+	background: #f5f5f5;
+	border:solid 1px rgba(100, 100, 100, .20);
+	-webkit-box-shadow:0 3px 8px rgba(0, 0, 0, .20);
+	z-index: 11;
+}
+#notification-row-container{
+	overflow: scroll;
+}
+#notification-row-container p{
+	color: #000;
+	text-align: left;
+	padding: 3px 10px;
+	border-bottom: 1px solid #a9a9a9;
+	cursor: pointer;
+}
+#notification-row-container p:hover{
+	background-color: #fff;
+}
+/* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
+#notifications:before {
+	content: '';
+	display:block;
+	width:0;
+	height:0;
+	color:transparent;
+	border:10px solid #CCC;
+	border-color:transparent transparent #FFF;
+	margin-top:-20px;
+	margin-left:10px;
+}
+
+#notific_heading {
+	display:block;
+	color:#333 !important;
+	background: #e5e5e5;
+	font-weight:bold;
+	font-size:13px;
+	padding:8px;
+	margin:0;
+	border-bottom:solid 1px rgba(100, 100, 100, .30);
+}
+
+.seeAll {
+	background:#F6F7F8;
+	padding:8px;
+	font-size:12px;
+	font-weight:bold;
+	border-top:solid 1px rgba(100, 100, 100, .30);
+	text-align:center;
+}
+.seeAll span{
+	color:#3b5998;
+	background:#F6F7F8;
+	cursor: pointer;
+}
+.seeAll span:hover {
+	color:#3b5998;
+	text-decoration:underline;
+}
+
+.unread-notification{
+	background-color: #f8fbd9;
+}
+
+/*============notification================ */
+
+
+.container{
+	width: 100%;
+	padding: 0px;
+	margin: 0px auto;
+}
+#leftBar{
+	//background-image: url("/assets/images/bg6.jpeg");
+}
+#rightBar{
+	//background-image: url("/assets/images/bg6.jpeg");
+}
+#middleBar{
+	//background-image: url("/assets/images/bg3.jpeg");
+}
+
+/*-------------override------TEST-------*/
+#options ul, #options, #moreOptions{
+	background-color: #384e65;
+}
+
+#menuBar .menuItem{
+	font-size: 1.5em;
+	background-color: #384e65;
+	padding: 5px 10px;
+	border: 1px solid #898989;
+	font-family: 'Raleway', Sans-Serif;
+}
+#options li{
+	height: 28px;
+}
+#options ul a{
+	color: #eff8f0;
+}
+
+#menuBar .menuItem{
+	color: #fff;
+}
+#options ul li a{
+	border-bottom: 1px solid #13a263;
+	padding: 2px;
+	text-decoration: none;
+}
+#options ul li a:hover{
+	border: 1px solid #fff;
+	padding: 5px 1px;
+}
+/*-------------override------TEST------*/
+#menuBar .menuItem{
+	text-decoration: none;
+}
+#menuBar .menuItem:hover{
+	background-color: #33475c;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+#ad1{
+	background-color: #e5f2cb;
+	display: none;
+}
+#general-msg p{
+	font-size: 20px;
+	color: #fff;
+	background-color: #f00;
+}
+#barWrapper{
+	//background-color: #f7fcf9;
+}
+h2{
+	color: rgb(181, 55, 39);
+	//text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+h2 span{
+	text-shadow: none;
+}
+#leftBar h3, #rightBar h3{
+	color: rgb(9, 109, 114) !important;
+	color: #fff !important;
+	background-color: rgba(62,87,112,0.8);
+}
+#rightBar{
+	position: relative;
+}
+#rightBar #admin-notice{
+	position: absolute;
+	background-color: #ff7900;
+	color: #fff;
+	z-index: 3;
+	padding: 3px 20px;
+	border: 1px solid #ee0e00;
+	box-shadow: 10px 10px 60px rgb(145, 145, 145);
+}
+#admin-notice #admin-notice-cross-btn{
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	padding: 0px 6px;
+	background-color: #000;
+}
+#admin-notice #admin-notice-cross-btn:hover{
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+	cursor: pointer;
+}
+h3{
+	color: rgb(181, 55, 39);
+}
+#exams h4, #assignments h4{
+	color: rgba(9,109,114,1) ;
+}
+h3, h4{
+	font-family: unspecified;
+	font-size: 1.6em;
+}
+
+.bars{
+	//border: 1px solid #e8ece9;
+}
+.bars ul li{
+	list-style: none;
+}
+#leftBar{
+	padding: 0px;
+	margin: 0 auto;
+}
+#leftBar ul li{
+	text-align: left;
+}
+.examDetailsBtn a, .assignDetailsBtn a{
+	all: unset;
+	border-bottom: 1px solid #000;
+}
+.examDetailsBtn a:hover, .assignDetailsBtn:hover{
+	border-bottom: 0px;
+	background-color: #2ba7ff;
+	color: #fff;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+#navLinks ul, #exams ul, #assignments{
+	margin-left: -20px;
+}
+#navLinks ul li a{
+	font-size: 1.2em;
+}
+#avatar img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+#reputation{
+	cursor: pointer;
+}
+
+#signupBtn a{
+	background-color: #2ba7ff;
+	color: #fff;
+}
+#avatar:hover{
+	border: 0px ;
+	padding: 0px 0px;
+}
+#recentlyuploaded ul {
+	color: #3a3a3a;
+	padding: 1px;
+}
+#recentlyuploaded ul li{
+	color: #3a3a3a;
+	padding: 6px 0px;
+}
+.eachFile ul li a{
+	all: unset;
+}
+.eachFile{
+	border-left: 2px solid #f5f8fa;
+	border-bottom: 1px solid #f5f8fa;
+	font-family: Raleway, sans-serif;
+}
+.eachFile:hover{
+	border-left: 2px solid #ff8c30;
+	border-bottom: 1px solid #ff8c30;
+	cursor: pointer;
+	color: #000;
+}
+#recentlyuploaded ul li ul li{
+	padding: 3px 3px;
+	color: #1b6d85;
+}
+#recentlyuploaded ul li ul li:hover{
+	border-bottom: 0px;
+	background-color: #2ba7ff;
+	color: #fff;
+	padding: 2px 4px;
+	cursor: pointer;
+}
+#upcoming-events ul{
+	margin-top: 10px;
+}
+#upcoming-events ul li{
+	padding: 10px 5px;
+	font-size: 14px;
+	border-bottom: 1px solid #00a962;
+}
+#upcoming-events h5{
+	color: #3b526a;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 4px 0px;
+}
+#requestedFiles ul{
+	padding: 1px;
+}
+#requestedFiles ul li ul li{
+	padding: 3px 3px;
+	border-radius: 5px;
+	//border: 1px solid #ffb75d;
+}
+#requestedFiles ul li ul li:hover{
+	background-color: #2ba7ff;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 0px;
+}
+#recentlyuploaded p , #requestedFiles p{
+	color: #0fac0f;
+}
+#canUans{
+	margin-top: 100px;
+}
+#canUans p{
+	text-align: left;
+}
+#canUans p a, #doUhaveFiles p a{
+	color: #000;
+}
+#doUhaveFiles p{
+	text-align: left;
+}
+
+/* community */
+
+.singleCommunity{
+	text-align: left;
+}
+.spanBtn{
+	background-color: #2ba7ff;
+	color: #fff;
+	padding: 4px 7px;
+	border: 1px solid #fff;
+}
+.spanBtn:hover{
+	cursor: pointer;
+	color: #2ba7ff;
+	background-color: #fff;
+	border: 2px solid #2ba7ff;
+	border-radius: 0px;
+	font-weight: 600;
+}
+.spanBtnDelete{
+	background-color: #fff;
+	color: #f00;
+	padding: 3px 7px;
+	border: 1px solid #f00;
+}
+.spanBtnDelete:hover{
+	cursor: pointer;
+	color: #fff;
+	background-color: #f00;
+	border: 2px solid #fff;
+	border-radius: 0px;
+	font-weight: 600;
+}
+
+
+/* community */
+
+
+/* upload */
+#uploadContainer h1 small{
+	border-bottom: 2px solid #000;
+}
+#uploadContainer h1 #closeUploadContainerBtn{
+	color: #f00;
+	font-size: 0.6em;
+}
+#uploadContainer h1 #closeUploadContainerBtn:hover{
+	cursor: pointer;
+	color: #f00;
+	border: 1px solid #f00;
+	font-size: 0.6em;
+}
+#radio-container ul li{
+	border: 1px solid #fff;
+	padding: 7px 15px;
+}
+#radio-container ul li:hover{
+	border: 1px solid #2ba7ff;
+	padding-bottom: 5px;
+}
+/* upload */
+
+
+/* directory bar */
+
+.dirElement input{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #000;
+}
+.dirNameInput{
+	padding-left: 8px;
+}
+.deleteDirBtn{
+	width: 30px;
+	height: 30px;
+}
+.saveDirBtn{
+	height: 25px;
+	width: 50px;
+}
+.saveDirBtn:hover{
+	height: 30px;
+	width: 60px;
+	cursor: pointer;
+}
+.deleteDirBtn:hover{
+	cursor: pointer;
+	border: 1px dotted;
+	padding: 5px;
+	border-radius: 50%;
+
+}
+
+/* directory bar */
+
+
+
+/* directoryContainer */
+
+#dirContainer{
+	text-align: left;
+	margin-top: 10px;
+	padding-bottom: 200px;
+	border: 1px dotted;
+}
+#dirContainer .dirWrapper, #dirContainer .fileWrapper{
+	background-color: #ffffff;
+}
+#dirContainer .dirWrapper, #dirContainer .fileWrapper{
+	border-top: 1px solid #e3dbe7;
+	padding: 2px 0px;
+	font-weight: 600;
+	font-size: 1em;
+}
+#dirContainer .dirWrapper:hover, #dirContainer .fileWrapper:hover{
+	cursor: pointer;
+	background-color: #f7f8fe;
+}
+#dirContainer .dirWrapper:focus, #dirContainer .fileWrapper:focus{
+	background-color: #fffbb9;
+}
+
+#rootDirectory, .dirPartInBar{
+	background-color: #dcdcdc;
+	padding: 5px 7px;
+	border-left: 2px solid #fff;
+	border-radius: 2px;
+	border-radius: 2px;
+}
+
+
+#cloudIcon{
+	list-style-image: url("/assets/images/cloud-icon.png");
+}
+/* direContainer */
+
+
+
+/* file explorer */
+#fileExplorer #topBarContainer{
+	background-color: #a2bdff;
+}
+#fileExplorer #topBar1, #fileExplorer #topBar2 ,
+#explorerNavBar #directoryBar{
+	border-top: 1px solid #e5e2f2;
+	background: #b1d1c4;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ececec));
+	background: -webkit-linear-gradient(top, #fff, #ececec);
+
+	background: -moz-linear-gradient(top, #fff, #ececec);
+
+	background: -ms-linear-gradient(top, #fff, #ececec);
+	background: -o-linear-gradient(top, #fff, #ececec);
+	padding: 2px 14px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	//text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: #000;
+	font-size: 13px;
+	font-family: Georgia, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+#topBar1 #active_cloud_name{
+	color: #1a4dfc;
+	font-size: 17px;
+	font-weight: 900;
+	background-color: #d9e54a;
+	padding: 3px 10px;
+	border: 1px solid #000;
+}
+#topBar1 ul li{
+	padding: 3px 20px;
+	border: 2px solid #ececec;
+}
+#topBar1 ul li:hover{
+	color: #000;
+	cursor: pointer;
+	border: 2px solid #2ba7ff;
+}
+
+#topBar1 #uploadFileIcon, #topBar1 #createDirBtn{
+	border: 2px solid #ff9d45;
+}
+#topBar1 #uploadFileIcon:hover, #topBar1 #createDirBtn:hover{
+	color: #000;
+	cursor: pointer;
+	border: 2px solid #2ba7ff;
+}
+
+#fileContainer .dirs{
+	list-style-image: url("/assets/images/folder-icon.png");
+}
+#fileExplorer #leftBar{
+	overflow: scroll;
+}
+#directoryBar #backBtn{
+	//margin-right: 80px;
+	cursor: pointer;
+}
+#directoryBar #backBtn #backBtnText:active{
+	background-color: #b62900;
+	border-right: 5px solid #ff3a00;
+}
+#cloudExplorerSpan{
+	color: #0afaff;
+	padding: 0px 20px 0px 0px;
+	font-size: 1.7em;
+
+	//color: #fff40f;
+	text-shadow: -1px 0 #ff5b2e, 0 1px #ff5b2e, 1px 0 #ff5b2e, 0 -1px #ff5b2e;
+}
+
+#recycle_bin{
+	width: 90px;
+	height: 90px;
+}
+#recycle_bin:hover{
+	width: 100px;
+	height: 100px;
+}
+
+/* file explorer */
+
+.profile-edit .filed-wrapper{
+	margin-top: 10px;
+}
+
+/* showSingleFile blade */
+#filePreviewMenuBar a{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+/* showSingleFile blade */
+
+
+/* Community Post */
+
+#postBtn{
+	padding: 6px 20px;
+	width: 140px;
+}
+.nicEdit-main{
+	background-color: #fff;
+}
+#generalPostContainer{
+	border: 1px solid #ff9d45;
+	padding: 5px 20px 20px 20px;
+	margin-bottom: 20px;
+	background-color: #edeff4;
+}
+#examContainer, #assignmentContainer, #pollContainer, #noticeContainer{
+	display: none;
+	border: 1px solid #ff9d45;
+	padding: 5px 20px 20px 20px;
+	margin-bottom: 20px;
+	background-color: #edeff4;
+}
+.nicEdit-main{
+	text-align: left;
+	padding: 10px;
+	overflow: scroll;
+}
+#pollContainer{
+	display: none;
+}
+.removePollOption{
+	color: #f00;
+}
+.removePollOption:hover{
+	background-color: #f00;
+	color: #fff;
+	cursor: pointer;
+}
+#single-community-top1 span{
+	color: #264ef0;
+	padding: 0px 20px;
+}
+#single-community-top1 span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#add_member_link{
+	background-color: #f0eab1;
+	padding: 7px;
+	display: none;
+}
+#cls-routine-container{
+	background-color: #ede9a3;
+	padding: 7px;
+	display: none;
+}
+#cls-routine-container form input{
+	margin-top: 30px;
+	background-color: #ea606a;
+	color: #fff;
+}
+#linkCopyBtn{
+	border: 1px solid;
+	padding: 4px 8px;
+
+}
+#linkCopyBtn:hover{
+	cursor: pointer;
+	background-color: #beb98c;
+	color: #fff;
+}
+
+/* Community Post */
+
+
+/* right click menu */
+.hasmenu, .hasmenu2 {
+	//border: 1px solid #008;
+	//margin: 3px;
+	padding: 5px;
+	//width: 30px;
+}
+
+/* Optionally define a fixed width for menus */
+.ui-menu {
+	width: 200px;
+}
+.ui-contextmenu{
+	margin: 300px 60% 30% 40%;
+}
+
+/* Allow to use <kbd> elements inside the title to define shortcut hints. */
+.ui-menu kbd {
+	padding-left: 1em;
+	//float: right;
+}
+
+/* Define a custom icon */
+.ui-icon.custom-icon-firefox {
+	//background-image: url(application_firefox.gif);
+	background-position: 0 0;
+}
+
+/* right click menu */
+
+
+/* userPostedContents */
+#CommunityUserPosts{
+	margin-top: 60px;
+}
+#CommunityUserPosts p{
+	text-align: left;
+}
+.postDetails img {
+	width: 100%;
+}
+#CommunityUserPosts .postHeading{
+	font-weight: 700;
+	font-family : "Times New Roman";
+	font-size: 4vh;
+	color: #000;
+	text-align: center;
+}
+.singleUserPost {
+	background-color: rgba(239, 239, 239, 0.58);
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 18px;
+	border:1px solid rgba(215, 215, 215, 0.58);
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+.singleUserPost .editIcon, .singleUserPost .deleteIcon:hover{
+	cursor: pointer;
+}
+#CommunityUserPosts .postHeading{
+	color: #0069e8;
+}
+
+.totalCastedVote{
+	background-color: #fcedb5;
+	color: #1524ea;
+	padding: 2px 10px;
+}
+/* userPostedContents */
+
+
+#respondToUpRequest{
+	margin-bottom: 30px;
+}
+
+#q_ask_btn{
+	border: 1px solid #b6b6b6;
+	font-weight: 600;
+}
+#q_ask_btn:hover{
+	border: 1px solid #000;
+	color: #000;
+	font-weight: 900;
+}
+
+.triangle_up, .triangle_down{
+	width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+.triangle_up:hover, .triangle_down:hover{
+	cursor: pointer;
+}
+.triangle_up{
+	border-bottom: 20px solid #a5a5a5;
+}
+.triangle_down{
+	border-top: 20px solid #a5a5a5;
+}
+.upvoted_triangle{
+	border-bottom: 20px solid #e78d0d;
+}
+.downvoted_triangle{
+	border-top: 20px solid #e78d0d;
+}
+
+#q_asked_by_wrapper{
+	padding: 0px;
+	margin: 0px;
+}
+.user_info{
+	background-color: #d6e7ea;
+}
+#question-topic li{
+	background-color: #d6e7ea;
+}
+
+#comment-to-q{
+	text-decoration: underline;
+}
+#comment-to-q:hover{
+	text-decoration: none;
+	border: 1px dotted;
+	cursor: pointer;
+}
+.single-q-wrapper:hover{
+	background-color: #eaf2fd;
+}
+.each-upload-request{
+
+}
+#cloud_communities{
+	border: 2px solid #1b6d85;
+}
+
+/*-----------------------*/
+#notificationContainer{
+	width: 60px;
+	height: 40px;
+	background-repeat: no-repeat;
+}
+
+#totalNotific{
+	display: none;
+}
+#notificationContainer option{
+	background-color: #f6ffdc;
+	padding-bottom: 10px;
+}
+
+#mark_as_read:hover{
+	cursor: pointer;
+}
+
+/*---------------*/
+#course_field_container .field_wrapper{
+	color: #00a962;
+}
+#course_field_container .field_wrapper .remove_field{
+
+}
+#join-course{
+	margin-top: 20px;
+}
+#join-course .single-course{
+	margin: 5px 0px;
+	background-color: rgba(225, 225, 225, 0.48);
+	padding: 5px;
+}
+/*-----------------------*/
+#settings_copy_token_btn:hover{
+	cursor: pointer;
+	background-color: #000;
+	color: #fff;
+}
+#desktop-client-input{
+	border: 2px solid #f00;
+	background-color: #eed7d7;
+}
+#token-copy-msg{
+	background-color: #ff1c1e;
+	color: #fff;
+	margin-top: 30px;
+}
+/*--------------------*/
+.single_q_comment p{
+	margin-top: 10px;
+	border-top: 1px solid #ebebeb;
+	padding : 3px 8px;
+}
+.commenter_name{
+	color: #00f;
+}
+.edit_comment, .delete_comment{
+	color: #868686;
+	text-decoration: underline;
+}
+.edit_comment:hover, .delete_comment:hover{
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+	border: 1px dotted;
+	padding: 2px 5px;
+}
+
+/*----------------------------------------------*/
+.single-video{
+	margin: 30px 10px;
+}
+.video-title{
+	font-size: 20px;
+	color: #3776fa;
+}
+
+
+
+/* colors */
+.font-f00{
+	color: #f00;
+}
+.bg-000{
+	background-color: #000;
+}
+/* colors */
+
+#incomplete-feature-msg{
+	display: none;
+}
+
+
+#session-dropdown-container{
+	border: 2px solid #f00;
+	background-color: #f7d3a5;
+	padding: 15px;
+}
+
+
+/*=========================Footer============================*/
+
+#footer{
+	margin-top: 60px;
+	padding: 60px 20px;
+	background-color: #212121;
+	color: rgba(249, 249, 249, 0.87);
+}
+#footer h3{
+	color: #fff !important;
+	margin-bottom: 20px;
+
+	font-family: unspecified;
+	text-shadow: 2px -1px 2px rgb(56, 75, 255);
+}
+#footer ul li{
+	list-style: none;
+	border-bottom: 1px dotted #868686;
+	padding: 10px 0px;
+	text-align: left;
+}
+#footer a:hover{
+	color: #00f;
+}
+.footer-social-links li a{
+	color: #00AAFF;
+	font-size: 30px;
+	padding:  5px 10px;
+}
+.footer-social-links li a:hover{
+	background-color: rgba(255, 255, 255, 0.93);
+	color: #00AAFF;
+}
+
+/*=========================Footer============================*/
+
+/*=================override jquery ui ================*/
+.ui-menu-item
+{
+	border: none !important;
+	background-color: #eff2ff;
+}
+/*=================override jquery ui ================*/
+
+
+.allowed-to-sync{
+	border: 1px solid #0d3625;
+}
+
+#home-boxes{
+	margin-top: 40px;
+}
+#home-boxes .single-box{
+	margin-top: 30px;
+	background-color: #49658544;
+	box-shadow: 2px 1px 2px 1px #496585;
+	cursor: pointer;
+	word-wrap: break-word;
+}
+#home-boxes .single-box:hover {
+	box-shadow: 2px 1px 2px 2px #415b77
+}
+#home-boxes .single-box:hover .p1{
+	color: #d12120;
+}
+#home-boxes .single-box h4 a{
+	all: unset;
+	color: #00854d;
+}
+
+/* ----------------------------------- */
+
+
+.my-h2{
+	font-size: 40px;
+	color: rgba(202, 23, 0, 0.87);
+	font-family: 'Risque', cursive;
+}
+.span-1{
+	color: #ff502e;
+}
+.my-hr-1{
+	display: block;
+	height: 2px;
+	background-color: #3b526a;;
+
+}
+
+
+/* ---------------------------------- */
+
+.contest-box-wrapper{
+	margin-top: 50px;
+}
+.contest-box-wrapper a{
+	text-decoration: none;
+}
+.contest-box{
+	border-top: rgba(0, 0, 0, 0.82);
+	margin-top: 5px;
+	color: #fff;
+	padding-top: 10px;
+	cursor: pointer;
+}
+.contest-box:hover{
+	color: #fff;
+}
+.contest-box p1{
+	padding-bottom: 20px;
+}
+
+
+#examDetailsWrapper{
+	color: #0000F0;
+	font-size: 18px;
+}
+.time-only{
+	background-color: rgba(233, 237, 100, 0.53);
+	padding: 1px 5px;
+	border: 1px solid rgb(233, 237, 100);;
+}
+
+/*Added by Sourav*/
+.action-button button{
+	margin-bottom: 3px;
+}
+
+ .single-notification{
+	background-color: #f0f0f0;
+	 border: 1px solid #f0f0f0;
+	color: #444;
+	margin-top: 1vh;
+	border-radius: 5px;
+	padding: 2vh 0 0 2vh;
+	overflow-wrap: break-word;
+}
+ .single-notification:hover{
+	border: 1px solid #b8b8b8;
+	background-color: #fff;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s;
+}
+.single-notification a{
+	text-decoration: none;
+	color: #666;
+}
+.directory{
+	color: #547494;
+}
+.date-time{
+	font-size: 0.8em;
+	color: #999;
+}
+p{
+	font-family: Raleway, sans-serif;
+	color: #444;
+}
+.buttons{
+	display: inline-block;
+}
+
+.all-right-btn{
+	width: 95%;
+	margin-bottom: 4px;
+	background-color: #eee;
+}
+.all-right-btn:hover{
+	border: 1px solid #999;
+	background-color: #384e65;
+	color: #fff;
+}

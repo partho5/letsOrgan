@@ -1,0 +1,2 @@
+<img title="Edit" post-type="{{$postType}}" post-id="{{$post->id}}" class="editIcon col-md-1" src="/assets/images/edit-icon.png" alt="Edit">
+<img title="Delete" post-type="{{$postType}}" post-id="{{$post->id}}" class="deleteIcon col-md-1" src="/assets/images/delete-btn.png" alt="Delete">

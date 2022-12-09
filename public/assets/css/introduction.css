@@ -1,0 +1,279 @@
+/*
+	Author: Shovon Mondal
+	Email: shovonmondal@yahoo.com
+	Sell No: 01941-233990
+	
+*/
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Itim|Patrick+Hand+SC');
+*{margin:0; padding:0}*
+body{
+	
+}
+a{
+	color:#000000;
+}
+/*wrap Width Fixed*/
+.wrap_img{
+	background-image:url(img/background/background.jpg);
+	background-size:100% 900px;
+	padding-bottom:175px;
+}
+.wrap{
+	width:1200px;
+	height:auto;
+	margin:0 auto;
+}
+/*Header menu*/
+.header_bg{
+	background-color:#0BA25E;
+	
+}
+.header_menu{
+	overflow:hidden;
+}
+.title_menu{
+	float:left;
+}
+.nav_menu{
+	float:right;
+}
+/*
+Style
+*/
+/*title_menu*/
+.title_menu ul li{
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding: 14px 13px;
+	font-size:25px;
+	font-weight: 700;
+	font-family: 'Itim', cursive;
+}
+.title_menu ul li:hover{
+	color:#fff;
+	transition: background-color 1.0s;
+}
+/*nav_menu*/
+.nav_menu{
+	height:61px;
+}
+.nav_menu ul{
+	list-style-type:none;
+}
+.nav_menu ul li{
+	float:left;
+}
+.nav_menu ul li:last-child{
+	border:none
+}
+.nav_menu ul li a{
+	text-decoration:none;
+	color:#fff;
+	display:block;
+	padding: 18px 13px;
+	font-size: 1.07rem;
+	font-weight: 700;
+	font-family: 'Itim', cursive;
+}
+
+.nav_menu ul li a:hover{
+	color:#956652;
+	background-color:#fff;
+	border-bottom:3px solid #000000;
+	transition: background-color 1.0s;
+}
+
+.nav_menu ul li{
+	position:relative;
+	z-index:999;
+}
+.nav_menu ul li ul{
+	position:absolute;left:-99999px;
+	background:#0073AA;
+}
+.nav_menu ul li:hover ul{
+	left:0;
+}
+.nav_menu ul li ul li:first-child{
+	
+}
+.nav_menu ul li ul li{
+	float:none;
+	border-right:none;
+	width:160px;
+}
+/*Main_Nav_Menu sticker CSS*/
+.stick {
+	position:fixed;
+	top:0px;
+	z-index:999999999999999;
+	width:100%;
+	background-color:#0BA25E;
+}
+/*section_menu_wrap*/
+.section_menu_wrap{
+	overflow:hidden;
+}
+.section_left{
+	width:900px;
+	height:auto;
+	float:left;
+}
+.section_right{
+	width:300px;
+	height:auto;
+	float:right;
+}
+/*content_wrap*/
+.content_wrap{
+	overflow:hidden;
+}
+.left_image{
+	width:330px;
+	float:left;
+	margin-top:50px;
+}
+.right_text{
+	width:570px;
+	float:right;
+	margin-top: 100px;
+}
+/*.left_image style*/
+.left_image img{
+	width:327px;
+	height:300px;
+	padding:1px;
+}
+.right_text h2{
+	font-family: 'Bad Script', cursive;
+}
+.main_heading h1{
+	text-align:center;
+	margin-top:50px;
+	font-size:40px;
+	font-family: 'Patrick Hand SC', cursive;
+}
+/*Right Content*/
+.button_menu{
+	margin-top:210px;
+}
+.button_menu button{
+	background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.button_menu button a{
+	text-decoration:none;
+	font-size:20px;
+	color:#fff;
+	font-family: 'Itim', cursive;
+}
+.button_menu button a:hover{
+	color:#FCCD48;
+	
+}
+
+/*
+	2nd Page Background
+*/
+.wrap_img_2{
+	background-image:url(img/background/background_2.jpg);
+	background-size:100% 900px;
+	padding-bottom:40px;
+}
+/*2nd Page Styling*/
+.title_bg{
+	background-color:#ddd;
+}
+.second_page{
+	text-align:center;
+	padding:20px;
+	font-family: 'Bad Script', cursive;
+}
+/*2nd Page Content Width Fixed*/
+.left_image_2{
+	width:503px;
+	float:left;
+	margin-top:110px;
+	margin-right:20px;
+}
+.right_text_2{
+	width:377px;
+	float:right;
+	margin-top:110px;
+}
+/*left_image_2*/
+.image_wrap_2 img{
+	width:149px;
+	height:150px;
+	padding:5px;
+	background-color:#ddd;
+	margin-right:5px;
+}
+.main_heading_2 h1{
+	text-align: center;
+	margin-top: 50px;
+	font-size: 40px;
+	font-family: 'Patrick Hand SC', cursive;
+	color:#fff;
+}
+/*Right_text_2*/
+.right_text_2 h2 {
+    font-family: 'Bad Script', cursive;
+	color:#fff;
+}
+/*
+	3rd Page Background
+*/
+.wrap_img_3{
+	background-image:url(img/background/background_3.jpg);
+	background-size:100% 900px;
+	padding-bottom:162px;
+}
+/*left_text_3 Width Fixed*/
+.left_text_3{
+	width:328px;
+	float:left;
+}
+.right_image_3{
+	width:526px;
+	float:right;
+}
+/*title_3*/
+.title_3 h1{
+	text-align: center;
+	margin-top: 150px;
+	font-size: 50px;
+	font-family: 'Patrick Hand SC', cursive;
+	color: #000000;
+}
+/*image_wrap_3*/
+.image_wrap_3 img{
+	margin-top: 100px;
+	width: 512px;
+	height: 302px;
+}
+
+/*jump_page Button CSS*/
+.jump_page button{
+	background-color: #FCCD48;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	margin-top:100px;
+	transition: background-color 1.0s;
+}
+.jump_page button a{
+	color:#000000;
+	font-family: 'Patrick Hand SC', cursive;
+}

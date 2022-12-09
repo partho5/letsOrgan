@@ -1,0 +1,170 @@
+
+
+.container-fluid{
+    background-color: #384e65;
+}
+#menus ul li a{
+    color: #fff;
+}
+
+#page-content{
+    top: 40px;
+    padding: 0px;
+}
+#head1 span{
+
+}
+
+#left-bar{
+    box-shadow: 1px 1px 1px rgba(77,89,93,0.6);
+    display: none;
+}
+#right-bar{
+    box-shadow: 1px 1px 1px rgba(77,89,93,0.6);
+}
+#left-bar, #right-bar{
+    background-color: rgba(170, 197, 204, 0.25);
+}
+#middle-bar{
+    background-color: rgba(245, 245, 245, 0.18);
+    box-shadow: 1px 1px 1px rgba(77,89,93,0.6);
+    background: url("bg4.png");
+    color: #000;
+    background-size: cover;
+}
+#timing{
+    color: rgba(255, 255, 255, 0.85);
+}
+.additional-info{
+    padding: 3px 20px;
+    background-color: #384e65;
+    border-bottom: 1px solid #0c9540;
+    color: #fff;
+    box-shadow: 0px 0px 3px;
+}
+.topic{
+    background-color: rgba(0, 229, 108, 0.13);
+    border-left: 3px solid #10be51;
+    border-bottom: 1px solid #10be51;
+    color: #000;
+}
+.span-1{
+    background-color: rgba(14, 169, 73, 0.61);
+    padding: 2px 10px;
+}
+.btn-1{
+    background-color: #00AAFF;
+    border-bottom: 1px solid;
+    font-size: 15px;
+    padding: 4px 30px;
+}
+.btn-2{
+    background-color: rgba(255, 92, 0, 0.71);
+    color: #fff;
+    padding: 1px 15px;
+}
+.btn-2:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(255, 92, 0);
+}
+.btn-1:hover{
+    border-bottom: 2px solid #000;
+    border-radius: 0px;
+}
+#contest-policy-box{
+    display: none;
+    padding: 0;
+}
+
+#contest-policy-box h3{
+    margin-top: -100px;
+    //need for animation
+}
+#contest-policy-box h3 span{
+    color: #fff;
+    background-color: rgb(255, 116, 72);
+    margin-top: 70px;
+}
+#contest-policy-box h3, #contest-policy-box .alert-text, #contest-policy-box .policy-text{
+    opacity: 0;
+}
+#contest-policy-box .alert-text{
+    color: #b64000;
+    font-size: 3vh;
+    margin-top: 100px;
+}
+#contest-policy-box .policy-text{
+    border: 2px solid rgba(71, 71, 71, 0.82);
+    background-color: rgba(238, 239, 243, 0.7);
+    line-height: 1.8;
+    box-shadow: 2px 2px 2px rgba(53, 53, 53, 0.84);
+    margin-top: 120px;
+
+}
+.policy-text h2 span{
+    color: #000;
+    border-bottom: 2px solid #0c9540;
+}
+.go-for-contest-btn{
+    cursor: pointer;
+    background-color: #008dd1;
+    color: #fff;
+    padding: 2px 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+}
+.go-for-contest-btn:hover{
+    background-color: #0098e2;
+    border-bottom: 2px solid #00354f;
+}
+#start-contest{
+    display: none;
+}
+#timing{
+    font-size: 4vh;
+}
+.my-hr-1{
+    display: block;
+    height: 2px;
+    background-color: #384e65;
+}
+#question-paper a{
+    background-color: #ff5c00;
+    color: #fff;
+}
+#contest-answer-box{
+    margin-bottom: 20px;
+    background-color: rgba(132, 158, 0, 0.06);
+}
+#contest-answer{
+    background-color: #fff;
+    border: 1px solid rgba(188, 188, 188, 0.57);
+}
+#admin-panel{
+    margin-top: 50px;
+}
+input, textarea{
+    color: #000;
+}
+#left-bar .contest-options{
+    border: 1px solid rgba(170, 197, 204, 0.43);
+    border-bottom: 1px solid rgba(129, 150, 155, 0.79);
+    background-color: rgba(170, 197, 204, 0.25);
+    padding: 5px 20px;
+    margin-bottom: 20px;
+}
+#left-bar .contest-options:hover{
+    background-color: rgba(202, 234, 243, 0.31);
+    color: rgb(0, 120, 213);
+}
+#left-bar .contest-options a{
+    color: rgb(0, 112, 198);
+    text-decoration: none;
+}
+#available-contests{
+    font-size: 18px;
+    color: #fff;
+}
+.bar{
+
+}

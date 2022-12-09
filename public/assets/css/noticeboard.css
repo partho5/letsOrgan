@@ -1,0 +1,29 @@
+body {
+
+}
+#noticeboard-container{
+    background: url("img/notice-board.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.notice-btn li{
+    background-color: rgba(255, 85, 0, 0.87);
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #999999;
+    padding: 3px 40px;
+    margin: 20px 20px 0px 10px;
+    cursor: pointer;
+}
+.notice-btn li:hover{
+    background-color: rgb(255, 75, 3);
+    box-shadow: 0px 2px 1px #767676;
+}
+.single-notice{
+    margin-top: 40px;
+}
+.single-notice div{
+    //background-color: rgba(255, 175, 89, 0.44);
+    background-color: #e0e0e0dd;
+    color: #000;
+}

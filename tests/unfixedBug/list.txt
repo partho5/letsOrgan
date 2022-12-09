@@ -1,0 +1,12 @@
+1. community create poll------ immediately after createing and appending poll options, vote doesn't casted, and hope delete/edit won't work. 
+coz, its dynamically appended dom
+
+
+2. if text left/right/center alighment is used >>> after updating general post, then agaim .updateIcon click cannt get details content, but a refresh solves this  ( wait : perhaps its solved, but still worths a testing )
+	https://stackoverflow.com/questions/3614212/jquery-get-html-of-a-whole-element
+
+3. http://127.0.0.1:8000/users/question/{id} >>> every update answer shrinks the text width to a some extent
+
+4. /api/desktop/{token}  token matching should be case sensitive , but its not
+5. settings page must be guardedwith middleware auth
+6. soft_delete issue, api sunc also fetches sub dirs 
