@@ -1,4 +1,4 @@
-This was an education based social media. Written using Laravel (php) framework, jQuery. Used mySQL database. <br>
+This was an education based social media. Written using Laravel (php) framework, jQuery. Used MySQL database. <br>
 Key points : <br>
 <ul>
   <li>User can search for existing or create community anew using the name of their institute/department. Any user can add member by sharing link like Google classroom</li>
